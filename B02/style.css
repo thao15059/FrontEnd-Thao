@@ -22,8 +22,10 @@
     position: absolute;
     max-width: 168px;
     max-height: 168px;
-    top: 470px;
-    left: 670px;
+	top: 70%;
+	left: 40%;
+	right: auto;
+	bottom: auto;
     border-radius: 50%;
     border: 5px solid black; 
 }
