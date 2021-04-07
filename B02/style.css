@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.cover {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 940px;
+    max-height: 627px;
+    position: relative;
+}
+
+.avatar {
+    position: absolute;
+    max-width: 168px;
+    max-height: 168px;
+    top: 470px;
+    left: 670px;
+    border-radius: 50%;
+    border: 5px solid black; 
+}
+
+.name {
+    padding-top: 50px;
+    text-align: center;
+}
+
