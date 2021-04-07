@@ -22,12 +22,14 @@
     position: absolute;
     max-width: 168px;
     max-height: 168px;
-	top: 70%;
-	left: 40%;
+	top: 80%;
+	left: 50%;
 	right: auto;
 	bottom: auto;
     border-radius: 50%;
-    border: 5px solid black; 
+    border: 5px solid black;
+    margin-top: -84px;
+    margin-left: -84px;
 }
 
 .name {
