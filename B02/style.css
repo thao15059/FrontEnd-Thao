@@ -28,8 +28,7 @@
 	bottom: auto;
     border-radius: 50%;
     border: 5px solid black;
-    margin-top: -84px;
-    margin-left: -84px;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .name {
