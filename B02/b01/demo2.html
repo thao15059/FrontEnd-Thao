@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Demo</title>
+    <style>
+        .wrap {
+            min-height: 100px;
+            background-color: aliceblue;
+            margin: auto;
+            padding: 10px;
+        }
+    
+        .demo-1 {
+            background-color: azure;
+            margin-bottom: 1em;
+        }
+        .demo-1 div {
+            width: 40px;
+            height: 40px;
+            background-color: brown;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .demo-1 .large {
+            height: 80px;
+        }
+
+        .demo-2 {
+            background-color: aqua;
+            text-align: center;
+            margin-bottom: 1em;
+        }
+        .demo-2 div {
+            width: 40px;
+            height: 40px;
+            background-color: blue;
+            display: inline-block;
+            vertical-align: middle;
+            
+        }
+
+        .demo-2 .large {
+            height: 80px;
+        }
+
+        .demo-3 {
+            background-color: lightblue;
+            text-align: right;
+        }
+        .demo-3 div {
+            width: 40px;
+            height: 40px;
+            background-color: red;
+            display: inline-block;
+            vertical-align: bottom;
+            
+        }
+
+        .demo-3 .large {
+            height: 80px;
+        }
+
+        .fz-large {
+  font-size: 40px;
+}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="demo-1">
+            <div class="demo-inline-1"></div>
+            <div class="demo-inline-1 large fz-large"></div>
+        </div>
+        <div class="demo-2">
+            <div class="demo-inline-2 large"></div>
+            <div class="demo-inline-2 fz-large"></div>
+        </div>
+        <div class="demo-3">
+            <div class="demo-inline-3"></div>
+            <div class="demo-inline-3 large fz-large"></div>
+        </div>
+    </div>
+</body>
+</html>

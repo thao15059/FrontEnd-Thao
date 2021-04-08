@@ -31,6 +31,25 @@
     transform: translateX(-50%) translateY(-50%);
 }
 
+.cover-avatar .camera {
+    position: absolute;
+    top: auto;
+	left: auto;
+	right: 44%;
+	bottom: 11%;
+}
+
+div.editor {
+    position: absolute;
+    top: auto;
+    left: auto;
+    right: 17%;
+    bottom: 13%;
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 15px;
+}
+
 .name {
     padding-top: 50px;
     text-align: center;
