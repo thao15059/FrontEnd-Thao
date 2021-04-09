@@ -9,7 +9,7 @@
     width: 50%;
     height: 100px;
     float: left;
-    margin-bottom: 70px;
+    margin-bottom: 90px;
 }
 
 .icon-block-item .icon-block-item__img {
@@ -17,6 +17,7 @@
     width: 35%;
     background-color: ghostwhite;
     text-align: center;
+    height: 165px;
 }
 
 .icon-block-item .icon-block-item__title {
@@ -25,17 +26,21 @@
     position: absolute;
     background-color: gainsboro;
     padding-left: 30px;
-    padding-bottom: 35px;
+    padding-bottom: 45px;
     padding-top: 10px;
     font-family: 'Poppins', sans-serif;
-    max-height: 105px;
+    height: 110px;
 }
 
 .icon-block-item__title .big-title{
-    font-weight: bold;
+    font-weight: bolder;
     margin-bottom: 10px;
 }
 
 .icon-block-item__title .content {
     font-size: 12px;
+    display: inline-block;
+    text-align: justify;
+    line-height: 20px;
+    padding-right: 20px;
 }
