@@ -13,8 +13,6 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
-    max-width: 940px;
-    max-height: 627px;
     position: relative;
 }
 
@@ -43,8 +41,8 @@ div.editor {
     position: absolute;
     top: auto;
     left: auto;
-    right: 17%;
-    bottom: 13%;
+    right: 5%;
+    bottom: 10%;
     background-color: aliceblue;
     padding: 5px;
     border-radius: 15px;
