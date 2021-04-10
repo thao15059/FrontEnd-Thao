@@ -3,13 +3,13 @@
     width: 1170px;
     height: auto;
     margin: auto;
-    position: relative;
+    font-size: 0; /* remove khoang trang trong html cho truong hop khong dung 25%*/
 }
 
 .icon-block-item {
     display: inline-block;
     height: 100%;
-    width: calc(96%/4);
+    width: calc(100%/4);
     margin-bottom: 50px;
 }
 
@@ -19,7 +19,8 @@
     border-radius: 50%;
     margin: auto;
     position: relative;
-    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2); 
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.1);
+    vertical-align: top; 
 }
 
 .icon-block__circle .icon-block__icon {
@@ -40,12 +41,12 @@
     text-transform: uppercase;
     margin-top: 20px;
     opacity: 0.8;
-    width: 200px;
+    padding: 0 45px;
     margin-left: auto;
     margin-right: auto;
 }
 
 ion-icon {
-    font-size: 50px;
+    font-size: 38px;
     color: peru;
 }
