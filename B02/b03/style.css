@@ -15,7 +15,6 @@
 .icon-block-item .icon-block-item__img {
     display: inline-block;
     width: 35%;
-    background-color: ghostwhite;
     text-align: center;
     height: 165px;
 }
@@ -24,7 +23,7 @@
     display: inline-block;
     width: 25%;
     position: absolute;
-    background-color: gainsboro;
+    background-color: #F8F8F8;
     padding-left: 30px;
     padding-bottom: 45px;
     padding-top: 10px;
