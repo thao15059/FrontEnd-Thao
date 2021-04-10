@@ -1,14 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .list-icon-block {
     width: 1170px;
-    height: auto;
     margin: auto;
     font-size: 0; /* remove khoang trang trong html cho truong hop khong dung 25%*/
 }
 
 .icon-block-item {
     display: inline-block;
-    height: 100%;
     width: calc(100%/4);
     margin-bottom: 50px;
 }
