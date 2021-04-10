@@ -1,0 +1,47 @@
+.list-icon-block {
+    width: 1170px;
+    height: auto;
+    margin: auto;
+    position: relative;
+}
+
+.icon-block-item {
+    width: 50%;
+    height: 100px;
+    display: inline-block;
+    margin-bottom: 90px;
+    width: calc(98%/2);
+}
+
+.icon-block-item .icon-block-item__img {
+    display: inline-block;
+    width: 35%;
+    background-color: ghostwhite;
+    text-align: center;
+    height: 165px;
+}
+
+.icon-block-item .icon-block-item__title {
+    display: inline-block;
+    width: 25%;
+    position: absolute;
+    background-color: gainsboro;
+    padding-left: 30px;
+    padding-bottom: 45px;
+    padding-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    height: 110px;
+}
+
+.icon-block-item__title .big-title{
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.icon-block-item__title .content {
+    font-size: 12px;
+    display: inline-block;
+    text-align: justify;
+    line-height: 20px;
+    padding-right: 20px;
+}
