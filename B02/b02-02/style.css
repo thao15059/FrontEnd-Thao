@@ -1,14 +1,15 @@
+
 .list-icon-block {
     width: 1170px;
     height: auto;
-    position: relative;
     margin: auto;
+    position: relative;
 }
 
 .icon-block-item {
-    width: 24%;
-    height: auto;
-    float: left;
+    display: inline-block;
+    height: 100%;
+    width: calc(96%/4);
     margin-bottom: 50px;
 }
 
@@ -32,13 +33,6 @@
     font-weight: bold;
 }
 
-ion-icon {
-    font-size: 50px;
-    color: peru;
-}
-
-    
-
 .icon-block__title {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Poppins', sans-serif;
@@ -51,6 +45,7 @@ ion-icon {
     margin-right: auto;
 }
 
-.clear {
-    clear: both;
+ion-icon {
+    font-size: 50px;
+    color: peru;
 }
