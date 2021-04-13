@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BOX 1 */
+.box-ani {
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    position: relative;
+}
+
+.box-hidden {
+    width: 0px;
+    height: 5px;
+    background-color: red;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    transition: width 1s;
+}
+
+.box-ani:hover .box-hidden{
+    width: 100%;
+}
+
+/* BOX 2 */
+
+.box-ani-2 {
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    position: relative;
+}
+
+.box-hidden-2-top{
+    width: 0;
+    height: 5px;
+    background-color: red;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    transition: width 1s;
+}
+
+.box-hidden-2-bot{
+    width: 0;
+    height: 5px;
+    background-color: red;
+    left: 0;
+    top: 0;
+    position: absolute;
+    transition: width 1s;
+}
+
+.box-ani-2:hover .box-hidden-2-top{
+    width: 100%;
+}
+
+.box-ani-2:hover .box-hidden-2-bot {
+    width: 100%;
+}
+
+/* BOX 3 */
+.box-ani-3 {
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    position: relative;
+}
+
+.box-hidden-3-top {
+    width: 0;
+    height: 5px;
+    background-color: red;
+    left: 0;
+    top: 0;
+    position: absolute;
+    transition: width 1s;
+}
+
+.box-ani-3:hover .box-hidden-3-top {
+    width: 100%;
+}
+
+.box-hidden-3-right {
+    width: 5px;
+    height: 0;
+    background-color: red;
+    right: 0;
+    top: 0;
+    position: absolute;
+    transition: height 1s;
+}
+
+.box-ani-3:hover .box-hidden-3-right {
+    height: 100%;
+}
+
+.box-hidden-3-bot {
+    width: 0;
+    height: 5px;
+    background-color: red;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    transition: width 1s;
+}
+
+.box-ani-3:hover .box-hidden-3-bot {
+    width: 100%;
+}
+
+.box-hidden-3-left {
+    width: 5px;
+    height: 0;
+    background-color: red;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    transition: height 1s;
+}
+
+.box-ani-3:hover .box-hidden-3-left {
+    height: 100%;
+}
+
+/* BOX 4 */
+.box-ani-4 {
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    position: relative;
+}
+
+.box-hidden-4-top {
+    width: 0;
+    height: 5px;
+    background-color: red;
+    left: 0;
+    top: 0;
+    position: absolute;
+    transition: width 1s;
+}
+
+.box-ani-4:hover .box-hidden-4-top {
+    width: 100%;
+}
+
+.box-hidden-4-right {
+    width: 5px;
+    height: 0;
+    background-color: red;
+    right: 0;
+    top: 0;
+    position: absolute;
+    transition: height 1s;
+    transition-delay: 1s;
+}
+
+.box-ani-4:hover .box-hidden-4-right {
+    height: 100%;
+}
+
+.box-hidden-4-bot {
+    width: 0;
+    height: 5px;
+    background-color: red;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    transition: width 1s;
+    transition-delay: 2s;
+}
+
+.box-ani-4:hover .box-hidden-4-bot {
+    width: 100%;
+}
+
+.box-hidden-4-left {
+    width: 5px;
+    height: 0;
+    background-color: red;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    transition: height 1s;
+    transition-delay: 3s;
+}
+
+.box-ani-4:hover .box-hidden-4-left {
+    height: 100%;
+}
+
+/* Button */
+.btnPublish {
+    border: 1px solid black;
+    font-size: 16px;
+    background-color: #37474f;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0 50px;
+    height: 55px;
+    box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0);
+    position: relative;
+}
+
+.btnPublish .rect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+	background: linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);
+    transition: transform 0.3s;
+    transform: translate(-100%, 0%) rotate(-45deg);
+}
+
+.btnPublish:hover .rect{
+    transform: translate(100%, 0%) rotate(-45deg);
+}
+

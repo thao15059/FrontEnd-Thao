@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* button 1 */
+.btnPublish {
+    border: 1px solid #37474f;
+    font-size: 16px;
+    background-color: white;
+    color: #37474f;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0 50px;
+    height: 55px;
+    box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0);
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.btnPublish:hover {
+    background-color: #37474f;
+    color: white;
+}
+
+/* button 2 */
+.btnPublish2 {
+    border: 1px solid #37474f;
+    font-size: 16px;
+    background-color: white;
+    color: #37474f;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0 50px;
+    height: 55px;
+    box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0);
+    position: relative;
+}
+
+.btnPublish2 .rectangle {
+    background-color: #37474f;
+    position: absolute;
+    top: 0;
+    right: 15%;
+    left: 15%;
+    bottom: 0;
+    opacity: 0;
+    transition: left 0.3s, right 0.3s, opacity 0.3s;
+}
+
+.btnPublish2 .btnPublish2Text {
+    position: relative;
+    z-index: 1;
+}
+
+.btnPublish2:hover .rectangle {
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.btnPublish2:hover {
+    color:white;
+}
+
+/* button 3 */
+.btnPublish3 {
+    border: 1px solid #37474f;
+    font-size: 16px;
+    background-color: white;
+    color: #37474f;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0 50px;
+    height: 55px;
+    box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.btnPublish3 .btnPublish3Text {
+    position: relative;
+    z-index: 1;
+}
+
+.btnPublish3 .rectangle {
+    background-color: #37474f;
+    position: absolute;
+    top: 0;
+    left: -20%;
+    bottom: 0;
+    right: 0;
+    transform: translate(-20px, -20px) rotate(-90deg);
+    transform-origin: 0 100%;
+    transition: transform 0.3s
+}
+
+.btnPublish3:hover {
+    color: white;
+}
+
+.btnPublish3:hover .rectangle {
+    transform: translate(0, 0) rotate(0);
+  }
