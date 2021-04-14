@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header .container {
+    width: 1170px;
+    height: auto;
+    margin: 0 auto;
+}
+
+header .container .logo #logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 90px;
+}
+
+header .container .welcome {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 67px;
+}
+
+header .container .desc {
+    font-family: 'PT Serif', serif;
+    color: #d9dfeb;
+    font-size: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: #1b1e30;
+}
