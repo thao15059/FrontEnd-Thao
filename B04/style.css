@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box-blue {
+    background-color: blue;
+    min-height: 50vh;
+}
+
+.box-purple {
+    background-color: purple;
+    min-height: 50vh;
+}
