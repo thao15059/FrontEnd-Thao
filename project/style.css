@@ -57,21 +57,33 @@ header .container .desc {
     font-weight: 600;
 }
 
+.headerButton button:hover {
+    color: #272931;
+    border: none;
+    background-color: #ffffff;
+    transition: background-color 1s;
+}
+
 .btnLivePreview {
     border: 1px solid #2b3146;
     background-color: #1b1e30;
     color: #ffffff;
+    box-shadow: 0 11px 29px 0 rgba(0,0,0,0.08);
 }
 
 .btnPurchase {
-    color: #272931;
-    background-color: #ffffff;
+    border: 1px solid #2b3146;
+    background-color: #1b1e30;
+    color: #ffffff;
+    box-shadow: 0 11px 29px 0 rgba(0,0,0,0.08);
 }
 
 .container #bannerCenter {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 600px;
+    height: 410px;
 }
 
 /*  */
