@@ -41,7 +41,7 @@ header .container .desc {
     margin-bottom: 34px;
 }
 
-/*  */
+/* ============================================================ HEADER ============================================================  */
 .headerButton {
     text-align: center;
 }
@@ -75,50 +75,94 @@ header .container .desc {
 }
 
 /*  */
-#bannerLeft1 {
+.bannerLeft1 {
     position: absolute;
-    top: 680px;
-    left: 80px;
+    width: 430px;
+    height: 260px;
+    bottom: 12%;
+    left: 4%;
+    overflow: hidden;
+}
+
+#bannerLeft1 {
+    width: 100%;
+}
+
+.bannerLeft2 {
+    position: absolute;
+    width: 262px;
+    height: 160px;
+    bottom: 43%;
+    left: 3.2%;
 }
 
 #bannerLeft2 {
+    width: 100%;
+}
+
+.bannerLeft3 {
     position: absolute;
-    top: 450px;
-    left: 30px;
+    width: 330px;
+    height: 200px;
+    bottom: 49%;
+    left: 14%;
 }
 
 #bannerLeft3 {
-    position: absolute;
-    top: 340px;
-    left: 230px;
+    width: 100%;
 }
 
+.bannerRight1 {
+    position: absolute;
+    width: 330px;
+    height: 200px;
+    bottom: 18.5%;
+    right: 11%;
+}
+
+/* ================================== BANNER RIGHT ============================================== */
 #bannerRight1 {
-    position: absolute;
-    top: 660px;
-    right: 180px;
+    width: 100%;
 }
 
-#bannerRight3 {
+.bannerRight2 {
     position: absolute;
-    top: 320px;
-    right: 0;
-}
-
-#bannerRight2 {
-    position: absolute;
-    top: 400px;
-    right: 295px;
+    width: 260px;
+    height: 160px;
+    bottom: 43%;
+    right: 12%;
     z-index: 1;
 }
 
-#bannerRight4 {
-    position: absolute;
-    top: 630px;
-    right: 0;
+#bannerRight2 {
+    width: 100%;
 }
 
-/* POWERFUL FEATURE */
+.bannerRight3 {
+    position: absolute;
+    width: 330px;
+    height: 200px;
+    bottom: 50%;
+    right: 2%;
+}
+
+#bannerRight3 {
+    width: 100%;
+}
+
+.bannerRight4 {
+    position: absolute;
+    bottom: 27%;
+    right: 0%;
+    width: 155px;
+    height: 140px;
+}
+
+#bannerRight4 {
+    width: 100%;
+}
+
+/* ============================================================ POWERFUL FEATURE ============================================================  */
 
 .powerful-feature {
     width: 1170px;
@@ -165,28 +209,14 @@ header .container .desc {
     line-height: 26px;
 }
 
-.service-block {
-    font-size: 0;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.service-block .col {
-    width: 50%;
-    display: inline-block;
-    vertical-align: top;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.service-block .col .service-block-item {
+.service-block-item {
     display: table;
     background-color: #f9f9f9;
     margin-bottom: 30px;
     min-height: 210px;
 }
 
-.service-block .col .service-block-item .service-block__image {
+.service-block__image {
     display: table-cell;
     position: relative;
     width: 40%;
@@ -194,7 +224,7 @@ header .container .desc {
     box-shadow: 0 11px 29px 0 rgba(0,0,0,0.08);
 }
 
-.service-block .col .service-block-item .service-block__image img {
+.service-block__image img {
     position: absolute;
     display: block;
     top: 50%;
@@ -202,7 +232,7 @@ header .container .desc {
     transform: translate(-50%, -50%);
 }
 
-.service-block .col .service-block-item .service-block-content {
+.service-block-content {
     display: table-cell;
     width: 60%;
     padding: 30px 50px 40px 20px;
@@ -268,24 +298,13 @@ header .container .desc {
     color: #828386;
 }
 
-.list-icon-block {
-    font-size: 0;
-}
-
-.icon-block {
-    width: 25%;
-    display: inline-block;
-    font-size: 16px;
-    padding: 25px 45px;
-    vertical-align: top;
-}
-
 .icon-block__icon-wrap {
     width: 110px;
     height: 110px;
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
     text-align: center;
     line-height: 110px;
     box-shadow: 0 11px 29px 0 rgba(0,0,0,0.08);
@@ -302,6 +321,7 @@ header .container .desc {
     font-size: 14px;
     font-weight: 600;
     margin-top: 20px;
+    margin-bottom: 50px;
     font-family: 'Poppins', sans-serif;
 }
 

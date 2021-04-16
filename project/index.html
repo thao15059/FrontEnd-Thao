@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=PT+Serif:ital@0;1&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- CSS -->
+    <link rel="stylesheet" href="grid-system.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -33,25 +34,39 @@
     
                 <img id="bannerCenter" src="./images/banner-center.png" alt="">
             </div>
-
-            <img id="bannerLeft1" src="./images/banner-left-1.png" alt="">
-            <img id="bannerLeft2" src="./images/banner-left-2.jpg" alt="">
-            <img id="bannerLeft3" src="./images/banner-left-3.png" alt="">
-            <img id="bannerRight1" src="./images/banner-right-1.png" alt="">
-            <img id="bannerRight2" src="./images/banner-right-2.png" alt="">
-            <img id="bannerRight3" src="./images/banner-right-3.png" alt="">
-            <img id="bannerRight4" src="./images/banner-right-4.jpg" alt="">
+            <div class="bannerLeft1">
+                <img id="bannerLeft1" src="./images/banner-left-1.png" alt="">
+            </div>
+            <div class="bannerLeft2">
+                <img id="bannerLeft2" src="./images/banner-left-2.jpg" alt="">
+            </div>
+            <div class="bannerLeft3">
+                <img id="bannerLeft3" src="./images/banner-left-3.png" alt="">
+            </div>
+            <div class="bannerRight1">
+                <img id="bannerRight1" src="./images/banner-right-1.png" alt="">
+            </div>
+            <div class="bannerRight2">
+                <img id="bannerRight2" src="./images/banner-right-2.png" alt="">
+            </div>
+            <div class="bannerRight3">
+                <img id="bannerRight3" src="./images/banner-right-3.png" alt="">
+            </div>
+            <div class="bannerRight4">
+                <img id="bannerRight4" src="./images/banner-right-4.jpg" alt="">
+            </div>
 
         </div>    
     </header>
 
+    <!-- ================================================ Powerful Feature ============================================================= -->
     <div class="powerful-feature">
         <h1 class="big-title">FEATURED</h1>
         <h1 class="title">Powerful Feature</h1>
         <img class="line" src="./images/line.png" alt="">
         <p class="desc">Have you noticed how everybody takes it for granted a bad experience is automatically, unreservedly, unremittingly bad? That nothing good could ever come from a bad childhood, for example? I’m hearing the comment.</p>
-        <div class="service-block">
-            <div class="col">
+        <div class="row">
+            <div class="col-6">
                 <div class="service-block-item">
                     <div class="service-block__image">
                         <img src="./images/unlimited-color.png" alt="">
@@ -62,7 +77,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+
+            <div class="col-6">
                 <div class="service-block-item">
                     <div class="service-block__image">
                         <img src="./images/translation-ready.png" alt="">
@@ -74,7 +90,7 @@
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col-6">
                 <div class="service-block-item">
                     <div class="service-block__image">
                         <img src="./images/gg-font.png" alt="">
@@ -86,7 +102,7 @@
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col-6">
                 <div class="service-block-item">
                     <div class="service-block__image">
                         <img src="./images/woocommerce.png" alt="">
@@ -98,7 +114,7 @@
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col-6">
                 <div class="service-block-item">
                     <div class="service-block__image">
                         <img src="./images/slider-revulation.png" alt="">
@@ -110,7 +126,7 @@
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col-6">
                 <div class="service-block-item">
                     <div class="service-block__image">
                         <img src="./images/visual-composer.png" alt="">
@@ -122,7 +138,7 @@
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col-6">
                 <div class="service-block-item">
                     <div class="service-block__image">
                         <img src="./images/documentation.png" alt="">
@@ -134,7 +150,7 @@
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col-6">
                 <div class="service-block-item">
                     <div class="service-block__image">
                         <img src="./images/superior.png" alt="">
@@ -148,13 +164,14 @@
         </div>
     </div>
 
+    <!-- ===========================================Key Features=========================================== -->
     <div class="key-feature">
         <h1 class="big-title">FEATURED</h1>
         <h1 class="title">Key Features</h1>
         <img class="line" src="./images/line.png" alt="">
         <p class="desc">Have you noticed how everybody takes it for granted a bad experience is automatically, unreservedly, unremittingly bad? That nothing good could ever come from a bad childhood, for example? I’m hearing the comment.</p>
-        <div class="list-icon-block">
-            <div class="icon-block">
+        <div class="row">
+            <div class="col-3">
                 <div class="icon-block__icon-wrap">
                     <i class="icon-block__icon ion-android-apps"></i>
                 </div>
@@ -162,7 +179,8 @@
                     +90 Shortcodes
                 </p>
             </div>
-            <div class="icon-block">
+
+            <div class="col-3">
                 <div class="icon-block__icon-wrap">
                     <i class="icon-block__icon ion-android-apps"></i>
                 </div>
@@ -170,7 +188,8 @@
                     ONE-CLICK IMPORT
                 </p>
             </div>
-            <div class="icon-block">
+
+            <div class="col-3">
                 <div class="icon-block__icon-wrap">
                     <i class="icon-block__icon ion-android-apps"></i>
                 </div>
@@ -178,7 +197,8 @@
                     SOCIAL media interation
                 </p>
             </div>
-            <div class="icon-block">
+
+            <div class="col-3">
                 <div class="icon-block__icon-wrap">
                     <i class="icon-block__icon ion-android-apps"></i>
                 </div>
@@ -186,7 +206,8 @@
                     FULLY REPONSIVE
                 </p>
             </div>
-            <div class="icon-block">
+
+            <div class="col-3">
                 <div class="icon-block__icon-wrap">
                     <i class="icon-block__icon ion-android-apps"></i>
                 </div>
@@ -194,7 +215,8 @@
                     WOOCOMMERCE
                 </p>
             </div>
-            <div class="icon-block">
+
+            <div class="col-3">
                 <div class="icon-block__icon-wrap">
                     <i class="icon-block__icon ion-android-apps"></i>
                 </div>
@@ -202,7 +224,8 @@
                     FULLY OPTIMIZIED FOR SEO
                 </p>
             </div>
-            <div class="icon-block">
+
+            <div class="col-3">
                 <div class="icon-block__icon-wrap">
                     <i class="icon-block__icon ion-android-apps"></i>
                 </div>
@@ -210,7 +233,8 @@
                     AMAZING PARALLAX EFFECT
                 </p>
             </div>
-            <div class="icon-block">
+
+            <div class="col-3">
                 <div class="icon-block__icon-wrap">
                     <i class="icon-block__icon ion-android-apps"></i>
                 </div>
@@ -218,7 +242,8 @@
                     BEAUTIFUL ICON PACK
                 </p>
             </div>
-            <div class="icon-block">
+
+            <div class="col-3">
                 <div class="icon-block__icon-wrap">
                     <i class="icon-block__icon ion-android-apps"></i>
                 </div>
@@ -226,7 +251,8 @@
                     700+ WEB OPTIMIZED GOOGLE FONTS
                 </p>
             </div>
-            <div class="icon-block">
+
+            <div class="col-3">
                 <div class="icon-block__icon-wrap">
                     <i class="icon-block__icon ion-android-apps"></i>
                 </div>
@@ -234,7 +260,8 @@
                     EASILY TRANSLATION
                 </p>
             </div>
-            <div class="icon-block">
+
+            <div class="col-3">
                 <div class="icon-block__icon-wrap">
                     <i class="icon-block__icon ion-android-apps"></i>
                 </div>
@@ -242,7 +269,8 @@
                     COMPLETELY FREE PLUGINS
                 </p>
             </div>
-            <div class="icon-block">
+
+            <div class="col-3">
                 <div class="icon-block__icon-wrap">
                     <i class="icon-block__icon ion-android-apps"></i>
                 </div>
@@ -251,6 +279,7 @@
                 </p>
             </div>
         </div>
+
     </div>
     <footer>
         <img src="./images/mockup_footer.png" alt="">
