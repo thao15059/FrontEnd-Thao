@@ -86,7 +86,7 @@ header .container .desc {
     height: 410px;
 }
 
-/*  */
+/* BANNER LEFT */
 .bannerLeft1 {
     position: absolute;
     width: 430px;
@@ -172,6 +172,54 @@ header .container .desc {
 
 #bannerRight4 {
     width: 100%;
+}
+
+/* ============================================================ CREATIVE DEMOS ============================================================  */
+.creative {
+    width: 1920px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.creative .big-title {
+    font-size: 120px;
+    color: #efefef;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    text-align: center;
+}
+
+.creative .title {
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding-top: 150px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.creative .line {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 220px;
+    margin-bottom: 30px;
+}
+
+.creative .desc {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'PT Serif', serif;
+    padding: 0 550px;
+    margin-bottom: 70px;
+    color: #828386;
+    line-height: 26px;
 }
 
 /* ============================================================ POWERFUL FEATURE ============================================================  */
