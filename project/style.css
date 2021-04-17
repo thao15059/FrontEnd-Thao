@@ -1,182 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header .bigContainer {
-    width: 1920px;
-    margin: 0 auto;
-    height: 1080px;
-    position: relative;
-    background-color: #1b1e30;
-}
-
-header .container {
-    width: 1170px;
-    height: auto;
-    margin: 0 auto;
-}
-
-header .container .logo #logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 90px;
-}
-
-header .container .welcome {
-    text-align: center;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 67px;
-}
-
-header .container .desc {
-    font-family: 'PT Serif', serif;
-    color: #d9dfeb;
-    font-size: 20px;
-    font-style: italic;
-    text-align: center;
-    margin-bottom: 34px;
-}
-
-/* ============================================================ HEADER ============================================================  */
-.headerButton {
-    text-align: center;
-}
-
-.headerButton button {
-    height: 50px;
-    padding: 0px 36px;
-    border-radius: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    font-weight: 600;
-}
-
-.headerButton button:hover {
-    color: #272931;
-    border: none;
-    background-color: #ffffff;
-    transition: background-color 1s;
-}
-
-.btnLivePreview {
-    border: 1px solid #2b3146;
-    background-color: #1b1e30;
-    color: #ffffff;
-    box-shadow: 0 11px 29px 0 rgba(0,0,0,0.08);
-}
-
-.btnPurchase {
-    border: 1px solid #2b3146;
-    background-color: #1b1e30;
-    color: #ffffff;
-    box-shadow: 0 11px 29px 0 rgba(0,0,0,0.08);
-}
-
-.container #bannerCenter {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 600px;
-    height: 410px;
-}
-
-/* BANNER LEFT */
-.bannerLeft1 {
-    position: absolute;
-    width: 430px;
-    height: 260px;
-    bottom: 12%;
-    left: 4%;
-    overflow: hidden;
-}
-
-#bannerLeft1 {
-    width: 100%;
-}
-
-.bannerLeft2 {
-    position: absolute;
-    width: 262px;
-    height: 160px;
-    bottom: 43%;
-    left: 3.2%;
-}
-
-#bannerLeft2 {
-    width: 100%;
-}
-
-.bannerLeft3 {
-    position: absolute;
-    width: 330px;
-    height: 200px;
-    bottom: 49%;
-    left: 14%;
-}
-
-#bannerLeft3 {
-    width: 100%;
-}
-
-.bannerRight1 {
-    position: absolute;
-    width: 330px;
-    height: 200px;
-    bottom: 18.5%;
-    right: 11%;
-}
-
-/* ================================== BANNER RIGHT ============================================== */
-#bannerRight1 {
-    width: 100%;
-}
-
-.bannerRight2 {
-    position: absolute;
-    width: 260px;
-    height: 160px;
-    bottom: 43%;
-    right: 12%;
-    z-index: 1;
-}
-
-#bannerRight2 {
-    width: 100%;
-}
-
-.bannerRight3 {
-    position: absolute;
-    width: 330px;
-    height: 200px;
-    bottom: 50%;
-    right: 2%;
-}
-
-#bannerRight3 {
-    width: 100%;
-}
-
-.bannerRight4 {
-    position: absolute;
-    bottom: 27%;
-    right: 0%;
-    width: 155px;
-    height: 140px;
-}
-
-#bannerRight4 {
-    width: 100%;
-}
-
 /* ============================================================ CREATIVE DEMOS ============================================================  */
 .creative {
-    width: 1920px;
     margin: 0 auto;
     background-color: #ffffff;
     position: relative;
@@ -337,7 +160,6 @@ header .container .desc {
 
 /* ============================================================= SHORT CODE ======================================================= */
 .short-code {
-    width: 1920px;
     margin: 0 auto;
     background-color: #ffffff;
     position: relative;
@@ -389,6 +211,7 @@ header .container .desc {
 
 .bg-short-code img {
     position: absolute;
+    width: 100%;
 }
 
 .bg-short-code span {
@@ -584,7 +407,6 @@ header .container .desc {
 /* FOOTER */
 footer {
     position: relative;
-    width: 1920px;
     height: 730px;
     margin: 0 auto;
     position: relative;
