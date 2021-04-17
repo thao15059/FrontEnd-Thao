@@ -278,6 +278,16 @@ header .container .desc {
     font-family: 'PT Serif', serif;
 }
 
+.timmer-wrap .big-title {
+    font-size: 300px;
+    color: #1d1e2b;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-family: 'Montserrat', sans-serif;
+}
+
 .timmer-wrap .title {
     color: #fff;
     padding-top: 25%;
