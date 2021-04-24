@@ -1,89 +1,5 @@
-/* ============================================================= SHORT CODE ======================================================= */
-.short-code {
-  margin: 0 auto;
-  background-color: #ffffff;
-  position: relative;
-  padding-bottom: 60px;
-}
-
-.short-code .big-title {
-  font-size: 120px;
-  color: #efefef;
-  position: absolute;
-  top: 90px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  font-family: "Montserrat", sans-serif;
-}
-
-.short-code .title {
-  font-size: 36px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  padding-top: 150px;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-
-.short-code .line {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  padding-top: 220px;
-  margin-bottom: 26px;
-}
-
-.short-code .desc {
-  text-align: center;
-  font-size: 15px;
-  font-family: "PT Serif", serif;
-  padding: 0 140px;
-  margin-bottom: 70px;
-  color: #828386;
-  line-height: 26px;
-}
-
-.bg-short-code {
-  position: relative;
-  height: 640px;
-}
-
-.bg-short-code img {
-  position: absolute;
-  width: 100%;
-}
-
-.bg-short-code span {
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 72px;
-  font-family: "Poppins", sans-serif;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0px 0px 43px 23px rgb(218 224 237 / 80%);
-  -moz-box-shadow: 0px 0px 43px 23px rgba(218, 224, 237, 0.8);
-  box-shadow: 0px 0px 43px 23px rgb(218 224 237 / 80%);
-  padding: 0px 55px;
-}
-
-.btnView {
-  margin: 50px auto 100px auto;
-  display: block;
-  height: 50px;
-  padding: 0px 36px;
-  border-radius: 30px;
-  font-family: "Montserrat", sans-serif;
-  background-color: #313235;
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: 600;
-}
-
 /* FOOTER */
 footer {
-  position: relative;
   height: 730px;
   margin: 0 auto;
   position: relative;
@@ -91,16 +7,14 @@ footer {
 }
 
 footer img {
-  top: -30px;
-  left: 20px;
+  top: -5%;
+  left: 0;
   position: absolute;
+  max-width: 50%;
 }
 
 footer .right-content {
-  float: right;
-  width: 43%;
-  margin-top: 190px;
-  width: 43%;
+  margin-top: 125px;
 }
 
 footer .right-content p {
@@ -113,7 +27,7 @@ footer .right-content p {
 footer .right-content h1 {
   font-size: 48px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   color: #ffffff;
   line-height: 54px;
 }
@@ -123,7 +37,7 @@ footer .right-content button {
   color: #272931;
   background-color: #ffffff;
   height: 76px;
-  padding: 0px 113px;
+  padding: 0px 50px;
   border-radius: 40px;
   font-size: 19px;
   font-family: "Montserrat", sans-serif;

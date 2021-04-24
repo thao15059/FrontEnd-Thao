@@ -1,0 +1,41 @@
+.section-error {
+  position: relative;
+}
+
+.error .title {
+  font-size: 35px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 120px;
+  margin-bottom: 15px;
+}
+
+.error .line {
+  margin-bottom: 15px;
+}
+
+.error .desc {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  margin-bottom: 30px;
+  color: #797a7d;
+}
+
+.error p {
+  font-family: "PT Serif", serif;
+  margin-bottom: 30px;
+  color: #797a7d;
+}
+
+.error-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 46%;
+}
+
+.error .t-btn {
+  margin-top: 10px;
+  margin-left: 0;
+  margin-right: 0;
+}
