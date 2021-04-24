@@ -1,0 +1,130 @@
+/* ============================================================ POWERFUL FEATURE ============================================================  */
+
+.powerful-feature {
+  max-width: 1170px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.powerful-feature .big-title {
+  font-size: 120px;
+  color: #efefef;
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-family: "Montserrat", sans-serif;
+}
+
+.powerful-feature .title {
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  padding-top: 150px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.powerful-feature .line {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-top: 210px;
+  margin-bottom: 26px;
+}
+
+.powerful-feature .desc {
+  text-align: center;
+  font-size: 15px;
+  font-family: "PT Serif", serif;
+  padding: 0 140px;
+  margin-bottom: 70px;
+  color: #828386;
+  line-height: 26px;
+}
+
+.service-block-item {
+  display: table;
+  background-color: #f9f9f9;
+  margin-bottom: 30px;
+  min-height: 210px;
+  width: 100%;
+}
+
+.service-block__image {
+  display: table-cell;
+  position: relative;
+  width: 40%;
+  background-color: white;
+  box-shadow: 0 11px 29px 0 rgba(0, 0, 0, 0.08);
+}
+
+.service-block__image img {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.service-block-content {
+  display: table-cell;
+  width: 60%;
+  padding: 30px 50px 40px 20px;
+}
+
+.service-block__title {
+  font-size: 20px;
+  color: #2c323a;
+  font-family: "Montserrat", sans-serif;
+}
+
+.service-block__desc {
+  font-size: 15px;
+  margin-top: 10px;
+  line-height: 1.86;
+  color: #7b7b7b;
+  font-family: "PT Serif", serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .powerful-feature .big-title {
+    font-size: 55px;
+  }
+  .powerful-feature .title {
+    font-size: 15px;
+    padding-top: 125px;
+  }
+  .powerful-feature .line {
+    padding-top: 155px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .powerful-feature .big-title {
+    font-size: 70px;
+  }
+  .powerful-feature .title {
+    font-size: 25px;
+    padding-top: 130px;
+  }
+  .powerful-feature .line {
+    padding-top: 165px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .powerful-feature .big-title {
+    font-size: 85px;
+  }
+  .powerful-feature .title {
+    font-size: 25px;
+    padding-top: 140px;
+  }
+  .powerful-feature .line {
+    padding-top: 180px;
+  }
+}
