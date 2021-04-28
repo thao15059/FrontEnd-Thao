@@ -38,9 +38,11 @@
   text-align: center;
   font-size: 15px;
   font-family: "PT Serif", serif;
-  padding: 0 140px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 880px;
   margin-bottom: 70px;
-  color: #828386;
+  color: #7b7b7b;
   line-height: 26px;
 }
 
@@ -48,6 +50,7 @@
   position: relative;
   max-height: 640px;
   max-width: 100%;
+  box-shadow: 0px 200px 0px 0px rgb(250 251 254);
 }
 
 .bg-short-code img {
@@ -80,6 +83,8 @@
   color: #ffffff;
   font-size: 12px;
   font-weight: 600;
+  position: relative;
+  border: none;
 }
 
 @media only screen and (max-width: 600px) {
