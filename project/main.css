@@ -13,6 +13,10 @@ body {
   clear: both;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   max-width: 1200px;
   margin-left: 15px;
@@ -59,4 +63,9 @@ body {
 .padding-y-100 {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.margin-y-100 {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
