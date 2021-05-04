@@ -12,10 +12,6 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
       rel="stylesheet"
       href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
     />
@@ -27,6 +23,8 @@
     <link rel="stylesheet" href="grid-system.css" />
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="style.css" />
+    <!-- script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
   </head>
   <body>
     <header>
@@ -120,7 +118,7 @@
           <div class="row">
             <div class="col-3 col-sm-12 col-m-12 col-l-6 col-xl-4">
               <div class="wrap-image">
-                <img src="./images/box-1.jpg" alt="" />
+                <img src="./images/box-1.jpg" alt=""/>
               </div>
               <p class="desc">V1. Home Default</p>
             </div>
@@ -134,7 +132,7 @@
 
             <div class="col-3 col-sm-12 col-m-12 col-l-6 col-xl-4">
               <div class="wrap-image">
-                <img src="./images/box-3.jpg" alt="" />
+                <img src="./images/box-3.jpg" alt=""/>
               </div>
               <p class="desc">V1. Home Agency</p>
             </div>
@@ -664,5 +662,10 @@
       </div>
     </footer>
     <!-- end footer-->
+    <script>
+      const el = document.querySelectorAll('img');
+      const observer = lozad(el); // passing a `NodeList` (e.g. `document.querySelectorAll()`) is also valid
+      observer.observe();
+    </script>
   </body>
 </html>
