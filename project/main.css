@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "PT Serif", serif;
+  color: #797a7d;
+}
+
+.clear {
+  clear: both;
+}
+
 .container {
   max-width: 1200px;
   margin-left: 15px;
@@ -24,6 +33,12 @@
   background-color: #1b1e30;
   color: #ffffff;
   box-shadow: 0 11px 29px 0 rgba(0, 0, 0, 0.08);
+  transition: all 0.5s ease-in-out;
+}
+
+.t-btn:hover {
+  background-color: white;
+  color: #272931;
 }
 
 .t-btn__white {
@@ -33,8 +48,15 @@
   box-shadow: 0 11px 29px 0 rgba(0, 0, 0, 0.08);
   background-color: white;
   color: #272931;
+  transition: all 0.5s ease-in-out;
+}
+
+.t-btn__white:hover {
+  background-color: #1b1e30;
+  color: #ffffff;
 }
 
 .padding-y-100 {
-  margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
