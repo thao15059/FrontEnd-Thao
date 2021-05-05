@@ -31,13 +31,13 @@
 // console.log("Tổng từ 1 đến n là ", sum);
 
 // exercise 04
-function power(x, n) {
-  if (n === 0) {
-    return 1;
-  } else if (y % 2 === 0) {
-    return power(x, parseInt(y / 2)) * power(x, parseInt(y / 2));
-  } else return x * power(x, parseInt(n / 2)) * power(x, parseInt(n / 2));
-}
+// function power(x, n) {
+//   if (n === 0) {
+//     return 1;
+//   } else if (y % 2 === 0) {
+//     return power(x, parseInt(y / 2)) * power(x, parseInt(y / 2));
+//   } else return x * power(x, parseInt(n / 2)) * power(x, parseInt(n / 2));
+// }
 
 // vi du neu x = 3, n = 2
 // n = 1; se tinh sum = 0 + 3^1 = 3
