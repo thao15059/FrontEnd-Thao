@@ -8,6 +8,12 @@ function randomInRange(start, end) {
   return Math.floor(number);
 }
 
+function playSound(src) {
+  var ping = new Audio(src);
+  ping.currentTime = 0;
+  ping.play();
+}
+
 function roolDiceClick() {
   const randomedNumber1 = randomInRange(1, 6);
   const randomedNumber2 = randomInRange(1, 6);
@@ -16,6 +22,10 @@ function roolDiceClick() {
 
   imageDice1.setAttribute("src", srcImageDice1);
   imageDice2.setAttribute("src", srcImageDice2);
+
+  playSound(
+    "https://alexerlandsson.github.io/assets/codepen/roll-the-dice/sound/dice-sound.mp3"
+  );
 }
 
 function roolDice() {
