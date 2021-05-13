@@ -20,8 +20,6 @@ function btnAskClick() {
   const randomedNumber = randomInRange(1, 5);
   const nameImage = `./images/ball${randomedNumber}@2x.png`;
   imageBall.setAttribute("src", nameImage);
-  console.log(body);
-  body.style.backgroundColor = getRandomColor();
 }
 
 function roolImage() {
