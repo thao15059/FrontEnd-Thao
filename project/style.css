@@ -381,33 +381,36 @@
 }
 
 /* banner */
-
-.timmer-wrap {
+#banner {
   background-color: #141724;
   position: relative;
   font-family: "PT Serif", serif;
+  z-index: -1;
 }
 
-.timmer-wrap .big-title {
+#banner .big-title {
   font-size: 300px;
   color: #1d1e2b;
   position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%, 0);
+  left: 0;
   font-family: "Montserrat", sans-serif;
+  z-index: -1;
 }
 
-.timmer-wrap .title {
+#banner .banner-text {
+  width: 50%;
+}
+
+#banner .banner-text .title {
   color: #fff;
-  padding-top: 25%;
   font-size: 36px;
   line-height: 48px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+  padding: 0 0 20px;
 }
 
-.timmer-wrap .desc {
+#banner .banner-text .desc {
   color: #bac0d1;
   font-size: 16px;
   padding-top: 30px;
@@ -416,38 +419,22 @@
   font-family: "PT Serif", serif;
 }
 
-.detail {
+#banner .banner-text .detail {
   padding-top: 10%;
 }
 
-.detail p {
+#banner .banner-text .detail p {
   color: #bac0d1;
   margin-bottom: 20px;
   display: inline-block;
   padding: 0 0 0 10px;
 }
 
-.timmer-wrap .row {
-  max-width: 1170px;
-  margin: 0 auto;
-  position: relative;
-  min-height: 620px;
-}
-
-.macbook :first-child {
-  width: 880px;
-  height: 530px;
+#banner .banner-right :first-child {
+  width: 50%;
   position: absolute;
-  right: -20%;
-  top: -10%;
-}
-
-.image-inside {
-  position: absolute;
-  width: 710px;
-  height: 440px;
+  right: 0;
   top: -5%;
-  left: 52.3%;
 }
 
 /* powerful-feature */
@@ -907,7 +894,6 @@
 .error .title {
   font-size: 35px;
   font-family: "Montserrat", sans-serif;
-  margin-top: 120px;
   margin-bottom: 15px;
 }
 
@@ -1005,7 +991,6 @@
 .layout .title {
   font-size: 35px;
   font-family: "Montserrat", sans-serif;
-  margin-top: 120px;
   margin-bottom: 15px;
 }
 
