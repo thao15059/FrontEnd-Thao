@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="./images/40.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #53d0e8;
+        min-height: 100vh;
+        font-family: "Courier New", Courier, monospace;
+      }
+      .container {
+        width: 400px;
+        text-align: center;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .ball {
+        margin-top: 80px;
+      }
+      .ball img {
+        display: block;
+        max-width: 250px;
+        margin: 0 auto;
+      }
+      .btn-ask {
+        border: 0;
+        font-size: 18px;
+        color: #53d0e8;
+        padding: 12px 22px;
+        background-color: #fff;
+        cursor: pointer;
+      }
+      .btn-ask:focus {
+        outline: none;
+      }
+      .group-btn {
+        margin-top: 100px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <!-- Random quả bóng câu hỏi -->
+  <body>
+    <div class="container">
+      <h1>Ask me anything</h1>
+      <div class="ball">
+        <img src="./images/ball1@2x.png" alt="" />
+      </div>
+      <div class="group-btn">
+        <button class="btn-ask">Click me to task</button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="./images/Icon-40@3x.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #fff;
+        min-height: 100vh;
+      }
+      .container {
+        display: flex;
+        width: 320px;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      [class*="sound-"] {
+        border: 0;
+        color: #fff;
+        font-size: 40px;
+        margin: 5px;
+        text-transform: uppercase;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        cursor: pointer;
+      }
+      .sound-c {
+        background-color: #ff3b30;
+      }
+      .sound-d {
+        background-color: #ff9500;
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+      .sound-e {
+        background-color: #ffcc00;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .sound-f {
+        background-color: #34c759;
+        margin-left: 25px;
+        margin-right: 25px;
+      }
+      .sound-g {
+        background-color: #5856d6;
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+      .sound-a {
+        background-color: #007aff;
+        margin-left: 35px;
+        margin-right: 35px;
+      }
+      .sound-b {
+        background-color: #af52de;
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+
+      .warning {
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+        background: #ff9500;
+        color: #333;
+        padding: 1rem 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <audio class="audio" src="sounds/A.wav" type="audio/wav"></audio>
+    <audio class="audio" src="sounds/B.wav" type="audio/wav"></audio>
+    <audio class="audio" src="sounds/C.wav" type="audio/wav"></audio>
+    <audio class="audio" src="sounds/D.wav" type="audio/wav"></audio>
+    <audio class="audio" src="sounds/E.wav" type="audio/wav"></audio>
+    <audio class="audio" src="sounds/F.wav" type="audio/wav"></audio>
+    <audio class="audio" src="sounds/G.wav" type="audio/wav"></audio>
+    <div class="container">
+      <button class="sound sound-c">c</button>
+      <button class="sound sound-d">d</button>
+      <button class="sound sound-e">e</button>
+      <button class="sound sound-f">f</button>
+      <button class="sound sound-g">g</button>
+      <button class="sound sound-a">a</button>
+      <button class="sound sound-b">b</button>
+    </div>
+    <div class="warning">
+      Vui lòng nhấn số từ 1 tới 7 sẽ tương ứng từ dưới lên trên
+    </div>
+  </body>
+  <script src="main.js"></script>
+  <!-- <script src="main-keyboard.js"></script> -->
+</html>

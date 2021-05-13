@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript DOM</title>
+    <link rel="stylesheet" href="style.css">
+    <link id="color-skin" rel="stylesheet" href="css/style-1.css">
+
+    <!-- Có 3 cách import CSS cho môt phần tử
+        1. CSS Inline <div style="color: red"><div>
+        2. Internal CSS  <style></style>
+        3. Extenal CSS -> Thường dùng -> File riêng ở bên ngoài
+        
+        -->
+
+    <style>
+        /* body {
+            backgroundColor: red;
+        } */
+    </style>
+
+</head>
+
+<body>
+    <div class="container abc">
+        <!-- Cấu trúc DOM trong HTML -->
+        <h1>Javascript DOM</h1>
+        <div id="demo" class="test-class class2">Id demo</div>
+        <!-- Comment -->
+
+        <div class="demo" data-title="Test 1">Class demo 1</div>
+        <div class="demo" data-title="Test 2">Class demo 2</div>
+        <div class="demo">Class demo 3</div>
+        <div class="demo" data-title="Test 4">Class demo 4</div>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora perferendis sed consequatur aut repudiandae
+            expedita aperiam reiciendis libero atque magni quasi commodi, ad omnis soluta iusto, odit cumque. Optio, at.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora perferendis sed consequatur aut repudiandae
+            expedita aperiam reiciendis libero atque magni quasi commodi, ad omnis soluta iusto, odit cumque. Optio, at.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora perferendis sed consequatur aut repudiandae
+            expedita aperiam reiciendis libero atque magni quasi commodi, ad omnis soluta iusto, odit cumque. Optio, at.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora perferendis sed consequatur aut repudiandae
+            expedita aperiam reiciendis libero atque magni quasi commodi, ad omnis soluta iusto, odit cumque. Optio, at.
+        </p>
+
+        <img class="class-demo" src="" alt=""> <br>
+
+        <button onclick="changeStyleColor('css/style-1.css')"
+            style="background-color: #2980b9; color: #fff; border-color: #2980b9" data-toggle="modal">Click me</button>
+        <button onclick="changeStyleColor('css/style-2.css')"
+            style="background-color: #2c3e50; color: #fff; border-color: #2c3e50" data-toggle="modal">Click me</button>
+        <button onclick="changeStyleColor('css/style-3.css')"
+            style="background-color: red; color: #fff; border-color: red" data-toggle="modal">Click me</button> <br>
+
+        <button onclick="changeStyleContainer('wide')"
+            style="background-color: #2980b9; color: #fff; border-color: #2980b9" data-toggle="modal">Wide</button>
+
+        <button onclick="changeStyleContainer('box')"
+            style="background-color: #2c3e50; color: #fff; border-color: #2c3e50" data-toggle="modal">Box</button> <br>
+
+        <!--  -->
+        <button onclick="changeBg('images/boxed-bg-img-02.jpg')" data-toggle="modal">Hinh 1</button>
+        <button onclick="changeBg('images/boxed-bg-img-05.jpg')" data-toggle="modal">Hinh 2</button>
+        <button onclick="changeBg()" data-toggle="modal">Khong hinh</button>
+
+        <div class="dropdown">
+            <button class="btn">Dropdown 1</button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Dropdown level 2</a></li>
+                <li><a href="#">Dropdown level 2</a></li>
+                <li><a href="#">Dropdown level 2</a></li>
+                <li><a href="#">Dropdown level 2</a></li>
+                <li><a href="#">Dropdown level 2</a></li>
+            </ul>
+        </div>
+
+        <div class="dropdown">
+            <button class="btn">Dropdown 2</button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Dropdown level 2</a></li>
+                <li><a href="#">Dropdown level 2</a></li>
+                <li><a href="#">Dropdown level 2</a></li>
+                <li><a href="#">Dropdown level 2</a></li>
+                <li><a href="#">Dropdown level 2</a></li>
+            </ul>
+        </div>
+
+        <div class="dropdown">
+            <button class="btn">Dropdown 3</button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Dropdown level 2</a></li>
+                <li><a href="#">Dropdown level 2</a></li>
+                <li><a href="#">Dropdown level 2</a></li>
+                <li><a href="#">Dropdown level 2</a></li>
+                <li><a href="#">Dropdown level 2</a></li>
+            </ul>
+        </div>
+
+        <form action="#">
+            <select name="year">
+                <!-- <option value="">1970</option> -->
+            </select>
+        </form>
+
+
+        <form action="#">
+            <select name="year">
+                <!-- <option value="">1970</option> -->
+            </select>
+        </form>
+
+        <form action="#">
+            <select name="country">
+                <!-- <option value="">1970</option> -->
+            </select>
+        </form>
+
+        <form action="#">
+                <select name="country_vn">
+                    <!-- <option value="">1970</option> -->
+                </select>
+            </form>
+    </div>
+
+</body>
+
+<!-- <script src="main.js"></script> -->
+<!-- <script src="main-2.js"></script> -->
+<!-- <script src="main-3.js"></script> -->
+<!-- <script src="main-4.js"></script> -->
+<!-- <script src="main-5.js"></script> -->
+<!-- <script src="main-6.js"></script> -->
+<script src="main-7.js"></script>
+
+</html>
