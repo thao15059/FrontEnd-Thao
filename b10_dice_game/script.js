@@ -1,130 +1,229 @@
-const finalScore = document.querySelector(".final-score");
-const btnNew = document.querySelector(".btn-new");
-const btnRoll = document.querySelector(".btn-roll");
-const btnHold = document.querySelector(".btn-hold");
+// Elements
+const btnNewGameEl = document.querySelector(".js-new-game-btn");
+const dice1El = document.querySelector("#dice-1 .spinner");
+const dice2El = document.querySelector("#dice-2 .spinner");
+const inputFinalScoreEl = document.querySelector(".js-final-score");
+const btnRollDiceEl = document.querySelector(".js-roll-dice");
+const btnHoldScoreEl = document.querySelector(".js-hold-score");
+const playerEl = {
+  player1: document.querySelector(".js-player-1"),
+  player2: document.querySelector(".js-player-2"),
+};
 
-const totalScorePlayerOne = document.querySelectorAll(
-  ".player-current-score"
-)[0];
-const totalScorePlayerTwo = document.querySelectorAll(
-  ".player-current-score"
-)[1];
+// Data
+const name = {
+  player1: "Player 1",
+  player2: "Player 2",
+};
+const currentScore = {
+  player1: 0,
+  player2: 0,
+};
+const totalScore = {
+  player1: 0,
+  player2: 0,
+};
 
-let currentScorePlayerOne = document.querySelectorAll(".player-score")[0];
-let currentScorePlayerTwo = document.querySelectorAll(".player-score")[1];
+let finalScore = 0;
+let currentPlayer = "player1"; // Nhận diện ai là người chơi hiện tại. Tổng có 2 người chơi
 
-const playerPanelOne = document.querySelectorAll(".player-panel")[0];
-const playerPanelTwo = document.querySelectorAll(".player-panel")[1];
-const diceOne = document.querySelector("#dice-1 > div");
-const diceTwo = document.querySelector("#dice-2 > div");
-let currentPlayerPlay = false;
-let isFinished = false;
-let isGameStart = false;
-
-function randomInRange(start, end) {
-  const number = Math.random() * (end - start + 1) + start;
-  return Math.floor(number);
+function randomDice() {
+  const x = Math.random(); // 0 <= x < 1
+  const y = x * 6; // 0 <= y < 6
+  const z = Math.floor(y) + 1; // 1 <= z <= 6
+  return z;
 }
 
-function whoWin() {
-  if (Number(totalScorePlayerOne.innerHTML) >= finalScore.value) {
-    alert("Player 1 is Winner");
-    playerPanelOne.classList.add("winner");
-    isFinished = true;
+function handleNewGame() {
+  resetData();
+
+  // Game chưa bắt đầu
+  if (finalScore <= 0) {
+    alert("Vui lòng nhập vào giá trị Final Score hợp lệ!");
     return;
   }
-  if (Number(totalScorePlayerTwo.innerText) >= finalScore.value) {
-    alert("Player 2 Winner");
-    playerPanelTwo.classList.add("winner");
-    isFinished = true;
+
+  // Bắt đầu tiến hành những logic để NewGame
+  inputFinalScoreEl.disabled = true;
+
+  btnRollDiceEl.classList.remove("disable");
+  btnHoldScoreEl.classList.remove("disable");
+
+  playerEl[currentPlayer].classList.add("active");
+}
+
+function switchPlayer() {
+  if (currentPlayer === "player1") {
+    currentPlayer = "player2";
+  } else if (currentPlayer === "player2") {
+    currentPlayer = "player1";
+  }
+
+  // Đưa giá trị điểm currentScore về 0 lại từ đầu
+  currentScore.player1 = 0;
+  currentScore.player2 = 0;
+
+  renderSwitchPlayerUI();
+  renderCurrentScoreUI();
+}
+
+function handleRollDice() {
+  // Sinh số ngâu nhiên cho 2 cục xúc sắc
+  const dice1Number = randomDice();
+  const dice2Number = randomDice();
+
+  // Hiển thị xúc sắc mới random ra giao diện
+  renderDiceUI(dice1Number, dice2Number);
+
+  // Kiểm tra xem có số nào là 1 và 6 hay không???
+  if (
+    dice1Number === 1 ||
+    dice1Number === 6 ||
+    dice2Number === 1 ||
+    dice2Number === 6
+  ) {
+    // Chuyển lượt chơi
+    switchPlayer();
     return;
+  }
+
+  currentScore[currentPlayer] =
+    currentScore[currentPlayer] + dice1Number + dice2Number;
+  renderCurrentScoreUI();
+}
+
+function handleCheckWinner() {
+  let isWinner = false;
+  if (totalScore.player1 >= finalScore) {
+    playerEl.player1.classList.add("winner");
+    playerEl.player1.classList.remove("active");
+    playerEl.player1.querySelector(".js-player-name").innerHTML = "WINNER";
+    isWinner = true;
+  }
+  if (totalScore.player2 >= finalScore) {
+    playerEl.player2.classList.add("winner");
+    playerEl.player2.classList.remove("active");
+    playerEl.player2.querySelector(".js-player-name").innerHTML = "WINNER";
+    isWinner = true;
+  }
+  if (isWinner === true) {
+    btnRollDiceEl.classList.add("disable");
+    btnHoldScoreEl.classList.add("disable");
+  }
+  return isWinner;
+}
+
+function handleHoldScore() {
+  totalScore[currentPlayer] =
+    currentScore[currentPlayer] + totalScore[currentPlayer];
+
+  renderTotalScoreUI();
+
+  // Kiểm tra xem có ai là người thắng hay không? Nếu có thì return về true, Nếu không thì return về false
+  const isWinner = handleCheckWinner();
+
+  // Không có người chơi nào thắng <-> Không có ai đạt được số kiểm FinalScore
+  if (isWinner === false) {
+    // Chuyển đổi lượt chơi
+    switchPlayer();
   }
 }
 
-function isGameReadyOrOver() {
-  if (!isGameStart) {
-    alert("Please Start New Game");
-    return;
-  }
-
-  if (isFinished) {
-    alert("Game is finished. Start New Game");
-    return;
-  }
+function handleChangeFinalScore() {
+  finalScore = Number(inputFinalScoreEl.value);
 }
 
-btnNew.addEventListener("click", () => {
-  console.log("Final Score: ", finalScore.value);
-  playerPanelOne.classList.add("active");
-  isGameStart = true;
-});
+function resetData() {
+  dice1El.classList.remove(
+    "dice-1",
+    "dice-2",
+    "dice-3",
+    "dice-4",
+    "dice-5",
+    "dice-6"
+  );
+  dice1El.classList.add("dice-1");
 
-btnRoll.addEventListener("click", () => {
-  isGameReadyOrOver();
+  dice2El.classList.remove(
+    "dice-1",
+    "dice-2",
+    "dice-3",
+    "dice-4",
+    "dice-5",
+    "dice-6"
+  );
+  dice2El.classList.add("dice-1");
 
-  if (!currentPlayerPlay) {
-    whoWin();
-    const diceOneNewValue = randomInRange(1, 6);
-    const diceTwoNewValue = randomInRange(1, 6);
+  playerEl.player1.querySelector(".js-current-score").innerHTML = "0";
+  playerEl.player2.querySelector(".js-current-score").innerHTML = "0";
 
-    diceOne.className = `spinner dice-${diceOneNewValue}`;
-    diceTwo.className = `spinner dice-${diceTwoNewValue}`;
-    if (diceOneNewValue === 1 || diceTwoNewValue === 1) {
-      alert("Change turn!");
-      currentScorePlayerOne.innerHTML = 0;
-      currentPlayerPlay = true;
-      playerPanelOne.classList.remove("active");
-      playerPanelTwo.classList.add("active");
-      return;
-    }
-    currentScorePlayerOne.innerHTML =
-      Number(currentScorePlayerOne.innerText) +
-      diceOneNewValue +
-      diceTwoNewValue;
-  } else {
-    whoWin();
-    const diceOneNewValue = randomInRange(1, 6);
-    const diceTwoNewValue = randomInRange(1, 6);
+  playerEl.player1.classList.remove("winner");
+  playerEl.player1.classList.remove("active");
+  playerEl.player2.classList.remove("winner");
+  playerEl.player2.classList.remove("active");
 
-    diceOne.className = `spinner dice-${diceOneNewValue}`;
-    diceTwo.className = `spinner dice-${diceTwoNewValue}`;
-    if (diceOneNewValue === 1 || diceTwoNewValue === 1) {
-      alert("Change turn!");
-      currentScorePlayerTwo.innerHTML = 0;
-      currentPlayerPlay = false;
-      playerPanelTwo.classList.remove("active");
-      playerPanelOne.classList.add("active");
-      return;
-    }
-    currentScorePlayerTwo.innerHTML =
-      Number(currentScorePlayerTwo.innerText) +
-      diceOneNewValue +
-      diceTwoNewValue;
-  }
-});
+  playerEl.player1.querySelector(".js-player-name").innerHTML = name.player1;
+  playerEl.player2.querySelector(".js-player-name").innerHTML = name.player2;
 
-btnHold.addEventListener("click", () => {
-  isGameReadyOrOver();
+  playerEl.player1.querySelector(".js-total-score").innerHTML = 0;
+  playerEl.player2.querySelector(".js-total-score").innerHTML = 0;
 
-  if (!currentPlayerPlay) {
-    totalScorePlayerOne.innerText =
-      Number(totalScorePlayerOne.innerText) +
-      Number(currentScorePlayerOne.innerText);
+  btnRollDiceEl.classList.add("disable");
+  btnHoldScoreEl.classList.add("disable");
 
-    playerPanelOne.classList.remove("active");
-    playerPanelTwo.classList.add("active");
-    currentScorePlayerOne.innerHTML = 0;
-    currentPlayerPlay = true;
-  } else {
-    totalScorePlayerTwo.innerText =
-      Number(totalScorePlayerTwo.innerText) +
-      Number(currentScorePlayerTwo.innerText);
+  currentPlayer = "player1";
+  currentScore.player1 = 0;
+  currentScore.player2 = 0;
+  totalScore.player1 = 0;
+  totalScore.player2 = 0;
+}
 
-    playerPanelTwo.classList.remove("active");
-    playerPanelOne.classList.add("active");
-    currentScorePlayerTwo.innerHTML = 0;
-    currentPlayerPlay = false;
-  }
+// Render UI
+function renderSwitchPlayerUI() {
+  playerEl[currentPlayer].classList.add("active");
+  playerEl[
+    currentPlayer === "player1" ? "player2" : "player1"
+  ].classList.remove("active");
+}
+function renderDiceUI(dice1Number, dice2Number) {
+  dice1El.classList.remove(
+    "dice-1",
+    "dice-2",
+    "dice-3",
+    "dice-4",
+    "dice-5",
+    "dice-6"
+  );
+  dice2El.classList.remove(
+    "dice-1",
+    "dice-2",
+    "dice-3",
+    "dice-4",
+    "dice-5",
+    "dice-6"
+  );
 
-  whoWin();
-});
+  dice1El.classList.add("dice-" + dice1Number);
+  dice2El.classList.add("dice-" + dice2Number);
+}
+function renderTotalScoreUI() {
+  playerEl.player1.querySelector(".js-total-score").innerHTML =
+    totalScore.player1;
+  playerEl.player2.querySelector(".js-total-score").innerHTML =
+    totalScore.player2;
+}
+function renderCurrentScoreUI() {
+  playerEl.player1.querySelector(".js-current-score").innerHTML =
+    currentScore.player1;
+  playerEl.player2.querySelector(".js-current-score").innerHTML =
+    currentScore.player2;
+}
+
+// Binding event
+btnNewGameEl.addEventListener("click", handleNewGame);
+btnRollDiceEl.addEventListener("click", handleRollDice);
+btnHoldScoreEl.addEventListener("click", handleHoldScore);
+inputFinalScoreEl.addEventListener("input", handleChangeFinalScore);
+
+// Init Game
+resetData();

@@ -1,0 +1,12 @@
+.navbar {
+  transform: translateY(0);
+  transition: 0.3s;
+}
+
+.scroll-down .navbar {
+  transform: translateY(-100%);
+}
+
+.progress-scroll {
+  height: 4px;
+}
