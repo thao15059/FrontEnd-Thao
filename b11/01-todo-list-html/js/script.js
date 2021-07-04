@@ -186,6 +186,8 @@ taskSubmitBtn.addEventListener("click", () => {
     tasks[taskIndex].level = Number(
       document.querySelector(".js-task-level").value
     );
+    taskId.removeAttribute("data-task-id");
+    resetForm();
     renderTaskListHTML(tasks);
     return;
   }
